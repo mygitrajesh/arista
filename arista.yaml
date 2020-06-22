@@ -1,0 +1,16 @@
+---  
+- hosts: R1
+  gather_facts: false
+  connection: network_cli
+  #ansible_become: yes
+  #ansible_become_method: enable
+  tasks:
+   - name: 'run show version on remote devices'
+     eos_command:
+       commands: enable 
+         
+   - name: 'Create vlan'
+     eos_vlan:
+      vlan_id: 1113
+      name: vlan-1113
+      state: present
