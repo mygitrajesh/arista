@@ -11,6 +11,6 @@
          
    - name: 'Create vlan'
      eos_vlan:
-      vlan_id: 1117
-      name: vlan-1117
+      vlan_id: 1118
+      name: vlan-1118
       state: present
