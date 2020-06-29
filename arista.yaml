@@ -8,9 +8,10 @@
    - name: 'enable'
      eos_command:
        commands: enable 
+   
+   - name: 'get vlan'
+     eos_command:
+       commands: show vlan
+      
          
-   - name: 'Create vlan'
-     eos_vlan:
-      vlan_id: 1110
-      name: vlan-1110
-      state: present
+   
