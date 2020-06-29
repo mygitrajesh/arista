@@ -9,9 +9,10 @@
      eos_command:
        commands: enable 
    
-   - name: 'get vlan'
+   - name: get_vlan
      eos_command:
        commands: show vlan
-      
-         
+     debug:
+       msg: "{{get_vlan}}"
+     register: results    
    
