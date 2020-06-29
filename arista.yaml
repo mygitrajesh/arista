@@ -9,7 +9,7 @@
      eos_command:
        commands: enable 
    
-   - name: get_vlan
+   - name: 'get_vlan'
      eos_command:
        commands: show vlan
      debug:
