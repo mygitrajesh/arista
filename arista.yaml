@@ -5,14 +5,14 @@
   #ansible_become: yes
   #ansible_become_method: enable
   tasks:
-   - name: 'enable'
-     eos_command:
+    - name: 'enable'
+      eos_command:
        commands: enable 
    
-   - name: 'get_vlan'
-     eos_command:
+    - name: 'get_vlan'
+      eos_command:
        commands: show vlan
-     debug:
-       msg: "{{get_vlan}}"
-     register: results    
+      debug:
+        msg: "{{get_vlan}}"
+      register: results    
    
